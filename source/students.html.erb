@@ -1,0 +1,23 @@
+---
+title: "Students"
+---
+
+<h1><%= data.students.title %></h1>
+
+<ul class="no-bullets">
+  <% data.students.students.each do |student| %>
+    <li>
+      <% if student['link'] %>
+        <a href="<%= student['link'] %>" target="<%= student['target'] %>">
+          <%= student['name'] %> (<%= student['degree'] %>)
+        </a>
+      <% else %>
+        <%= student['name'] %> (<%= student['degree'] %>)
+      <% end %>
+
+      <% if student['co_advised_with'] %>
+        <span> (co-advised with <%= student['co_advised_with'] %>)</span>
+      <% end %>
+    </li>
+  <% end %>
+</ul>

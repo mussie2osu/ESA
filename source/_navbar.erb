@@ -1,0 +1,30 @@
+<div class = "navbar">
+    
+        <%= link_to('Home', 'home.html') %>
+        <%= link_to('Research', 'research.html') %>
+        <%= link_to('News', 'news.html') %>
+        <%= link_to('Teaching', 'teaching.html') %>
+        <%= link_to('Students', 'students.html') %>
+    
+</div>
+
+<!-- This is only meant to be rendered on the index and home page. The reason why it is here is because markdown doesn't support div. -->
+
+<% if current_page.data.title == "Home" || current_page.data.title == "Index"%>
+<div class="container">
+<div>
+<p>
+<img src= "images/bjjvnkt2.jpg">
+</p>
+</div>
+<div class="text">
+<ul style = "list-style-type:none;">
+    <li> Shaileshh Bojja Venkatakrishnan </li>
+    <li>  Dreese Lab 572 </li>
+    <li> <%= link_to('Department of Computer Science and Engineering', 'https://cse.osu.edu/') %>
+    <li> <%= link_to('The Ohio State Univerisity', 'https://www.osu.edu/') %>
+    <li> bojjavenkatakrishnan.2@osu.edu </li>
+</ul>
+</div>
+</div>
+<%end%>
