@@ -1,30 +1,39 @@
+
 img {
-  max-width: 100px;
-  border: 5px solid #fd2217; }
+  border: 5px solid #235617;
+  display: block;
+  margin: auto;
+  width: 50%; }
+
+  .float {
+    float: right;
+    width: 15%;
+    height: auto;
+}
+
+.home{
+      width: 40%;
+
+}
+
+.flag {
+  max-width: 300px; 
+  border: none;}
 
 body {
   background-color: #e2e2e2;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 2vh 2rem;
   text-align: left;
+  padding: 2vh 2rem;
   font-size: 20px; }
 
 li {
-  margin: 10px;
   font-weight: bold; }
 
-ul {
-  list-style-type: none;
-  margin-left: 40px;
-  background-color: red; }
-
-table, th, td {
-  border: 1px solid; }
-
-.container {
-  align-items: center;
-  display: flex; }
+ul.nav {
+  background-color: red;
+  width: auto; }
 
 .text {
   text-align: left; }
@@ -33,26 +42,31 @@ table, th, td {
   text-align: left;
   font-size: 30px;
   font-style: italic;
-  color: #0a7bc7;
-  display: inline;
-  width: 100%; }
+  display: inline; }
 
-div {
-  width: 100%; }
+.container {
+  display: -ms-grid;
+  display: grid;
+  content: ' ';
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  background-color: #1500fe;
+  padding: 10px; }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2; }
-
-tr:hover {
-  background-color: #0a7bc7; }
+.container > div {
+  background-color: #eeeeeeee;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center; }
 
 a {
   color: #2600ff; }
 
-.no-bullets {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0; }
+div::before {
+  content: '';
+  position: absolute; }
 
-hr {
-  border: 1px solid red; }
+div::after {
+  content: '';
+  position: absolute; }
