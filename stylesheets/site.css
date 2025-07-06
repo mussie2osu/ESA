@@ -1,24 +1,20 @@
-
 img {
   border: 5px solid #235617;
   display: block;
   margin: auto;
   width: 50%; }
 
-  .float {
-    float: right;
-    width: 15%;
-    height: auto;
-}
+.float {
+  float: right;
+  width: 15%;
+  height: auto; }
 
-.home{
-      width: 40%;
-
-}
+.home {
+  width: 40%; }
 
 .flag {
-  max-width: 300px; 
-  border: none;}
+  max-width: 300px;
+  border: none; }
 
 body {
   background-color: #e2e2e2;
@@ -33,7 +29,7 @@ li {
 
 ul.nav {
   background-color: red;
-  width: auto; }
+  width: 100%; }
 
 .text {
   text-align: left; }
