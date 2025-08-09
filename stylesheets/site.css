@@ -66,3 +66,19 @@ div::before {
 div::after {
   content: '';
   position: absolute; }
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  content: ' ';
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  background-color: #1500fe;
+  padding: 10px; }
+
+.gallery > div {
+  background-color: #eeeeeeee;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center; }
