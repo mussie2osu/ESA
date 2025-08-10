@@ -82,3 +82,7 @@ div::after {
   padding: 10px;
   font-size: 30px;
   text-align: center; }
+
+iframe {
+  width: 100%;
+  height: auto; }
