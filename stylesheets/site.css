@@ -83,6 +83,19 @@ div::after {
   font-size: 30px;
   text-align: center; }
 
-iframe {
+.video {
+  position: relative;
+  overflow: hidden;
   width: 100%;
-  height: auto; }
+  padding-top: 40%; }
+
+iframe {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  border: none; }
