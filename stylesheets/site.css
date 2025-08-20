@@ -99,3 +99,13 @@ iframe {
   width: 80%;
   height: 100%;
   border: none; }
+
+ul.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  ul.social img {
+    border: none; }
+  ul.social li {
+    float: left; }
