@@ -1,0 +1,111 @@
+img {
+  border: 5px solid #235617;
+  display: block;
+  margin: auto;
+  width: 50%; }
+
+.float {
+  float: right;
+  width: 15%;
+  height: auto; }
+
+.home {
+  width: 40%; }
+
+.flag {
+  max-width: 300px;
+  border: none; }
+
+body {
+  background-color: #e2e2e2;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  text-align: left;
+  padding: 2vh 2rem;
+  font-size: 20px; }
+
+li {
+  font-weight: bold; }
+
+ul.nav {
+  background-color: red;
+  width: 100%; }
+
+.text {
+  text-align: left; }
+
+.navbar {
+  text-align: left;
+  font-size: 30px;
+  font-style: italic;
+  display: inline; }
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  content: ' ';
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  background-color: #1500fe;
+  padding: 10px; }
+
+.container > div {
+  background-color: #eeeeeeee;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center; }
+
+a {
+  color: #2600ff; }
+
+div::before {
+  content: '';
+  position: absolute; }
+
+div::after {
+  content: '';
+  position: absolute; }
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  content: ' ';
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  background-color: #1500fe;
+  padding: 10px; }
+
+.gallery > div {
+  background-color: #eeeeeeee;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center; }
+
+.video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 40%; }
+
+iframe {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  border: none; }
+
+ul.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  ul.social img {
+    border: none; }
+  ul.social li {
+    float: left; }
