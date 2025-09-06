@@ -1,8 +1,4 @@
-img {
-  border: 5px solid #235617;
-  display: block;
-  margin: auto;
-  width: 50%; }
+
 
 .float {
   float: right;
@@ -13,16 +9,20 @@ img {
   width: 40%; }
 
 .flag {
-  max-width: 300px;
-  border: none; }
+  display: block;
+  width: 30%;
+  margin-left: 20%;
+  }
 
 body {
   background-color: #e2e2e2;
   color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+    font-family: 'Montserrat';
   text-align: left;
   padding: 2vh 2rem;
-  font-size: 20px; }
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 20px; }       
 
 li {
   font-weight: bold; }
@@ -41,6 +41,9 @@ ul.nav {
   display: inline; }
 
 .container {
+
+ 
+
   display: -ms-grid;
   display: grid;
   content: ' ';
@@ -50,6 +53,12 @@ ul.nav {
   padding: 10px; }
 
 .container > div {
+
+  img {
+  display: block;
+  margin: auto;
+  width: 50%; }
+
   background-color: #eeeeeeee;
   border: 1px solid black;
   padding: 10px;
@@ -68,20 +77,19 @@ div::after {
   position: absolute; }
 
 .gallery {
-  display: -ms-grid;
-  display: grid;
-  content: ' ';
-  -ms-grid-columns: auto auto;
-  grid-template-columns: auto auto;
-  background-color: #1500fe;
-  padding: 10px; }
 
-.gallery > div {
-  background-color: #eeeeeeee;
-  border: 1px solid black;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center; }
+    column-count: 3;
+
+
+      img {
+        display: block;
+        margin: auto;
+        padding-top: 10%;
+        width: 100%; }
+
+
+  }
+
 
 .video {
   position: relative;
@@ -99,13 +107,30 @@ iframe {
   width: 80%;
   height: 100%;
   border: none; }
-
-ul.social {
+.social {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden; }
-  ul.social img {
-    border: none; }
+  overflow: hidden; 
+
+  img{
+    width: 5%;
+  }
+
+}
+ 
   ul.social li {
     float: left; }
+
+div.culture {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  padding: 10%; }
+  div.culture figure img {
+    border: none;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  div.culture figure figcaption {
+    text-align: center; }
