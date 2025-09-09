@@ -1,5 +1,3 @@
-
-
 .float {
   float: right;
   width: 15%;
@@ -11,18 +9,17 @@
 .flag {
   display: block;
   width: 30%;
-  margin-left: 20%;
-  }
+  margin-left: 20%; }
 
 body {
   background-color: #e2e2e2;
   color: #333;
-    font-family: 'Montserrat';
+  font-family: 'Montserrat';
   text-align: left;
   padding: 2vh 2rem;
   margin-left: 2%;
   margin-right: 2%;
-  font-size: 20px; }       
+  font-size: 20px; }
 
 li {
   font-weight: bold; }
@@ -41,9 +38,6 @@ ul.nav {
   display: inline; }
 
 .container {
-
- 
-
   display: -ms-grid;
   display: grid;
   content: ' ';
@@ -53,17 +47,15 @@ ul.nav {
   padding: 10px; }
 
 .container > div {
-
-  img {
-  display: block;
-  margin: auto;
-  width: 50%; }
-
   background-color: #eeeeeeee;
   border: 1px solid black;
   padding: 10px;
   font-size: 30px;
   text-align: center; }
+  .container > div img {
+    display: block;
+    margin: auto;
+    width: 50%; }
 
 a {
   color: #2600ff; }
@@ -77,19 +69,14 @@ div::after {
   position: absolute; }
 
 .gallery {
-
-    column-count: 3;
-
-
-      img {
-        display: block;
-        margin: auto;
-        padding-top: 10%;
-        width: 100%; }
-
-
-  }
-
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3; }
+  .gallery img {
+    display: block;
+    margin: auto;
+    padding-top: 10%;
+    width: 100%; }
 
 .video {
   position: relative;
@@ -107,20 +94,17 @@ iframe {
   width: 80%;
   height: 100%;
   border: none; }
+
 .social {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden; 
+  overflow: hidden; }
+  .social img {
+    width: 5%; }
 
-  img{
-    width: 5%;
-  }
-
-}
- 
-  ul.social li {
-    float: left; }
+ul.social li {
+  float: left; }
 
 div.culture {
   display: -ms-grid;
@@ -128,9 +112,11 @@ div.culture {
   -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
   padding: 10%; }
-  div.culture figure img {
-    border: none;
-    -o-object-fit: contain;
-       object-fit: contain; }
-  div.culture figure figcaption {
-    text-align: center; }
+
+div.culture figure img {
+  border: none;
+  -o-object-fit: contain;
+  object-fit: contain; }
+
+div.culture figure figcaption {
+  text-align: center; }
